@@ -17,7 +17,7 @@ error:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:1111/eureka/
+      defaultZone: http://registration.cf.ns.nd-paas.itn.ftgroup/eureka/
 
 # HTTP Server
 server:
