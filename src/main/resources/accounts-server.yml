@@ -22,3 +22,11 @@ eureka:
 # HTTP Server
 server:
   port: 2222   # HTTP (Tomcat) port
+  
+---
+spring:
+  profiles: cloud
+eureka:
+  instance:
+    hostname: ${vcap.application.uris[0]}
+    nonSecurePort: 80
