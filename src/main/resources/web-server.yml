@@ -2,8 +2,6 @@
 spring:
   application:
     name: web-service  # Identify this application
-  freemarker:
-    enabled: false     # Ignore Eureka dashboard FreeMarker templates
   thymeleaf:
     cache: false       # Allow Thymeleaf templates to be reloaded at runtime
     prefix: classpath:/web-server/templates/    # Trailing / mandatory
@@ -13,21 +11,6 @@ spring:
 error:
   path=/error
 
-# Discovery Server Access
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://registration.cf.ns.nd-paas.itn.ftgroup/eureka/
-
-# HTTP Server
-server:
-  port: 3333   # HTTP (Tomcat) port
-
----
-spring:
-  profiles: cloud
-eureka:
-  instance:
-    hostname: ${vcap.application.uris[0]}
-    nonSecurePort: 80
-    instanceId: 
+service:
+  accounts:
+    url: accounts.cf.ns.nd-paas.itn.ftgroup

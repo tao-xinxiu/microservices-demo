@@ -1,7 +1,6 @@
 package io.pivotal.microservices.services;
 
 import io.pivotal.microservices.services.accounts.AccountsServer;
-import io.pivotal.microservices.services.registration.RegistrationServer;
 import io.pivotal.microservices.services.web.WebServer;
 
 import org.springframework.boot.SpringApplication;
@@ -38,9 +37,7 @@ public class Main {
 		// <server-name>-server.yml (this app. uses YAML)
 		System.setProperty("spring.config.name", serverName + "-server");
 
-		if (serverName.equals("registration")) {
-			SpringApplication.run(RegistrationServer.class, args);
-		} else if (serverName.equals("accounts")) {
+		if (serverName.equals("accounts")) {
 			SpringApplication.run(AccountsServer.class, args);
 		} else if (serverName.equals("web")) {
 			SpringApplication.run(WebServer.class, args);
@@ -52,7 +49,7 @@ public class Main {
 
 	protected static void usage() {
 		System.out.println("Usage: java -jar ... <server-name> [server-port]");
-		System.out.println("     where server-name is 'registration', "
+		System.out.println("     where server-name is "
 				+ "'accounts' or 'web' and server-port > 1024");
 	}
 }

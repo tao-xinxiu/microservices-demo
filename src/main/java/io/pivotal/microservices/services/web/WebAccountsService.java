@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.HttpClientErrorException;
 import org.springframework.web.client.RestTemplate;
+import org.springframework.beans.factory.annotation.Value;
 
 /**
  * Hide the access to the microservice inside this local service.
@@ -24,12 +25,14 @@ public class WebAccountsService {
 	@Autowired
 	protected RestTemplate restTemplate;
 
+	@Value("${service.accounts.url:''}")
 	protected String serviceUrl;
 
 	protected Logger logger = Logger.getLogger(WebAccountsService.class
 			.getName());
 
-	public WebAccountsService(String serviceUrl) {
+	@PostConstruct
+	public void init() {
 		this.serviceUrl = serviceUrl.startsWith("http") ? serviceUrl
 				: "http://" + serviceUrl;
 	}
