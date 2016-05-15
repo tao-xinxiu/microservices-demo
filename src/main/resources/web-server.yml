@@ -13,4 +13,4 @@ error:
 
 service:
   accounts:
-    url: accounts.cf.ns.nd-paas.itn.ftgroup
+    url: localhost:2222
