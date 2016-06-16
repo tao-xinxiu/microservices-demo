@@ -9,9 +9,11 @@
   },
   "apps": {
     "web": {
+      "path": ".",
       "manifest": "web.json"
     },
     "accounts": {
+      "path": ".",
       "manifest": "accounts.json"
     }
   }
