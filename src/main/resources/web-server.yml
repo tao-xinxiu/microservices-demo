@@ -11,6 +11,5 @@ spring:
 error:
   path=/error
 
-service:
-  accounts:
-    url: localhost:2222
+accounts:
+  host: localhost:2222

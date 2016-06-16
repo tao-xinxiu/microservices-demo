@@ -2,6 +2,12 @@
   "name": "web",
   "version": "0.0.1",
   "deployment": {
-    "path": "target/microservice-demo-0.0.1-SNAPSHOT.jar"
+    "path": "target/microservice-demo-0.0.1-SNAPSHOT.jar",
+    "env": {
+      "JBP_CONFIG_JAVA_MAIN": '{arguments: "web $PORT"}'
+    }
+    "appConnections": {
+      "accounts": {}
+    }
   }
 }

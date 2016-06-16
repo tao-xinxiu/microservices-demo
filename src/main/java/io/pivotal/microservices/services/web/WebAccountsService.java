@@ -25,7 +25,7 @@ public class WebAccountsService {
 	@Autowired
 	protected RestTemplate restTemplate;
 
-	@Value("${service.accounts.url:''}")
+	@Value("${accounts.host:''}")
 	protected String serviceUrl;
 
 	protected Logger logger = Logger.getLogger(WebAccountsService.class

@@ -6,4 +6,4 @@ applications:
   path: target/microservice-demo-0.0.1-SNAPSHOT.jar
   env:
     JBP_CONFIG_JAVA_MAIN: '{arguments: "web $PORT"}'
-    SERVICE_ACCOUNTS_URL: accounts.cf.ns.nd-paas.itn.ftgroup
+    ACCOUNTS_HOST: accounts.cf.ns.nd-paas.itn.ftgroup
