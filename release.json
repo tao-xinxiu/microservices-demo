@@ -5,7 +5,7 @@
     "type": "git",
     "url": "https://github.com/tao-xinxiu/microservices-demo.git",
     "referenceValue": "master",
-    "postClone": "mvn package"
+    "postClone": "mvn package -DskipTests"
   },
   "apps": {
     "web": {
