@@ -10,7 +10,7 @@
   "apps": {
     "web": {
       "manifest": "web.json"
-    }
+    },
     "account": {
       "manifest": "account.json"
     }
