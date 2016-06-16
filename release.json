@@ -11,8 +11,8 @@
     "web": {
       "manifest": "web.json"
     },
-    "account": {
-      "manifest": "account.json"
+    "accounts": {
+      "manifest": "accounts.json"
     }
   }
 }
