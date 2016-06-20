@@ -1,6 +1,6 @@
 {
   "name": "accounts",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "deployment": {
     "path": "target/microservice-demo-0.0.1-SNAPSHOT.jar",
     "env": {
