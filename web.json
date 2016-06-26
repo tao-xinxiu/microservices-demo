@@ -1,6 +1,6 @@
 {
   "name": "web",
-  "version": "0.0.2",
+  "version": "0.0.1",
   "deployment": {
     "path": "target/microservice-demo-0.0.1-SNAPSHOT.jar",
     "env": {
