@@ -9,7 +9,11 @@ spring:
 
 # Map the error path to error template (for Thymeleaf)
 error:
-  path=/error
+  path: /error
+
+# HTTP Server
+server:
+  port: 3333   # HTTP (Tomcat) port
 
 accounts:
   host: localhost:2222

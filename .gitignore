@@ -1,7 +1,15 @@
 *.class
 .classpath
 .project
+*.iml
 .settings/
+.idea/
+.gradle/
+build/
+gradle.properties~
+microservices-demo.ipr
+microservices-demo.iws
+
 
 target/
 

@@ -32,6 +32,13 @@ public class Account implements Serializable {
 
 	protected BigDecimal balance;
 
+	/**
+	 * This is a very simple, and non-scalable solution to generating unique
+	 * ids. Not recommended for a real application. Consider using the
+	 * <tt>@GeneratedValue</tt> annotation and a sequence to generate ids.
+	 * 
+	 * @return The next available id.
+	 */
 	protected static Long getNextId() {
 		synchronized (nextId) {
 			return nextId++;
