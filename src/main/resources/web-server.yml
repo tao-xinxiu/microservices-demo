@@ -15,5 +15,8 @@ error:
 server:
   port: 3333   # HTTP (Tomcat) port
 
-accounts:
-  host: localhost:2222
+service:
+  accounts:
+    url: "localhost:2222"
+    protocol: https
+    skipSslVerification: false

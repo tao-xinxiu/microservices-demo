@@ -37,7 +37,7 @@ public class WebServer {
 	 */
 	@LoadBalanced
 	@Bean
-	RestTemplate restTemplate() {
+	public RestTemplate restTemplate() {
 		return new RestTemplate();
 	}
 
